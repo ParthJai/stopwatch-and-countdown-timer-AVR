@@ -218,7 +218,7 @@ void send_a_string(char *string)
 	while(*string>0)
 	send_a_character(*string++);
 }
-ISR (TIMER1_COMPA_vect) //I wonder why this ISR works....
+ISR (TIMER1_COMPA_vect)
 {
 	if(i==2)//run it if stopwatch is selected
 	{
